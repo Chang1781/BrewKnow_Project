@@ -1,0 +1,65 @@
+#header {
+	background-color: #FFF;
+	width: 320px;
+	position: static;
+}
+.logoBox {
+	width: 320px;
+	margin-top: 30px;
+}
+.mainPage {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+#contact_page_container {
+	background-image: url(../img/DarkBeerBackground.png);
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+#brews_page_container {
+	background-image: url(../img/MedBeerBackground.png);
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+#home_page_container {
+	background-image: url(../img/LightBeerBackground.png);
+	background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#content {
+	width: 250px;
+	margin-left: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 14px;
+	height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+
+}
+
+#brewNames {
+
+	width:150px;
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	height:-50px;
+	margin-left: 35px;
+}	
+
+.contactBox {
+
+	width:250px;
+	margin-left: -5px;
+	position: static;
+}
+
+
+h1 {font-size: 15
+
+}	

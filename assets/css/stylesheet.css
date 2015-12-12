@@ -16,16 +16,25 @@
 	background-image: url(../img/DarkBeerBackground.png);
 	background-repeat: no-repeat;
     background-size: 100%;
+    width: 1600px;
+    height: 1200px;
+    max-width: 100%;
 }
 #brews_page_container {
 	background-image: url(../img/MedBeerBackground.png);
 	background-repeat: no-repeat;
     background-size: 100%;
+    width: 1600px;
+    height: 1200px;
+    max-width: 100%;
 }
 #home_page_container {
 	background-image: url(../img/LightBeerBackground.png);
 	background-repeat: no-repeat;
     background-size: 100%;
+    width: 1600px;
+    height: 1200px;
+    max-width: 100%;
 
 }
 #content {
@@ -57,9 +66,11 @@
 	width:250px;
 	margin-left: -5px;
 	position: static;
+
 }
 
 
 h1 {font-size: 15
 
 }	
+

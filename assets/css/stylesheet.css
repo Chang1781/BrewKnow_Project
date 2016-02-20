@@ -1,8 +1,15 @@
+body {
+  margin: 0;
+}
+
 #header {
 	background-color: #FFF;
-	width: 320px;
+	max-width: 100%;
+  max-height: 100%;
 	position: static;
+
 }
+
 .logoBox {
 	width: 320px;
 	margin-top: 30px;
@@ -18,27 +25,26 @@
 	height: 100%;
 }
 #contact_page_container {
-	background-image: url(../img/DarkBeerBackground.png);
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
-    width: 1600px;
-    height: 1200px;
     max-width: 100%;
+    background-color: #321f11;
 }
 #brews_page_container {
-	background-image: url(../img/MedBeerBackground.png);
 	background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
     max-width: 100%;
+    background-color: #642500;
 }
 #home_page_container {
-	background-image: url(../img/LightBeerBackground.png);
+
 	background-repeat: no-repeat;
-    background-size: 100%;
-    width: 1600px;
+    background-size: cover;
+    width: 100%;
     height: 1200px;
     max-width: 100%;
+    background-color: #EAB006;
 
 }
 #content {
@@ -48,10 +54,12 @@
 	color: #FFF;
 	font-size: 14px;
 	height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 	width: 50%;
-    text-align: center;
+  text-align: center;
+
+
 
 }
 
@@ -65,11 +73,359 @@
 	margin-left: 35px;
 }	
 
-
+#welcome{
+  text-align: center;
+  font-family: Century Gothic;
+  letter-spacing: 5px;
+  color: #FFF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 h1 {font-size: 15
 
 }	
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+html {
+  background-color: #321f11;
+  background-size: cover;
+  height: 100%;
+
+}
+
+#feedback-page {
+  text-align: center;
+}
+
+#form-main {
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+}
+
+#form-div {
+  background-color: rgba(72, 72, 72, 0.4);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #d49600;
+  color: #8c6239;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused {
+  color: #4a2001;
+  border: #4a2001 solid 3px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  background-color: white;
+}
+
+#button-brown {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #5d3f21;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+#button-brown:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+}
+
+.submit:hover {
+  color: #8c6239;
+}
+
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #d49600;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease {
+  width: 100%;
+  background-color: #d49600;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+.bubble-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+.bubble-toggle:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.bubbles {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bubble-container {
+  position: absolute;
+  bottom: 0;
+  will-change: transform;
+  -webkit-animation: bubblerise 4s infinite ease-in;
+  -moz-animation: bubblerise 4s infinite ease-in;
+  -ms-animation: bubblerise 4s infinite ease-in;
+  animation: bubblerise 4s infinite ease-in;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.bubble {
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  will-change: transform;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: bubblewobble 0.4s infinite linear;
+  -moz-animation: bubblewobble 0.4s infinite linear;
+  -ms-animation: bubblewobble 0.4s infinite linear;
+  animation: bubblewobble 0.4s infinite linear;
+}
+
+@-webkit-keyframes bubblerise {
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+@-moz-keyframes bubblerise {
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+@-ms-keyframes bubblerise {
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+@keyframes bubblerise {
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes bubblewobble {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 2px;
+  }
+}
+@-moz-keyframes bubblewobble {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 2px;
+  }
+}
+@-ms-keyframes bubblewobble {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 2px;
+  }
+}
+@keyframes bubblewobble {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 2px;
+  }
+}
